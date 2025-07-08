@@ -688,3 +688,49 @@ body > footer {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* --- Improved button UX --- */
+button, .filter-btn, .subscribe-button, .like-btn {
+  background: linear-gradient(90deg, var(--color-primary-medium), var(--color-primary-dark));
+  color: var(--color-text-light);
+  border: none;
+  border-radius: var(--border-radius-base);
+  padding: 0.7em 1.6em;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(53, 84, 186, 0.10);
+  transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+  outline: none;
+  margin: 0.2em 0.3em;
+  min-width: 120px;
+  min-height: 44px;
+  display: inline-block;
+}
+button:hover, button:focus, .filter-btn:hover, .filter-btn:focus, .subscribe-button:hover, .like-btn:hover {
+  background: linear-gradient(90deg, var(--color-primary-dark), var(--color-primary-medium));
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(53, 84, 186, 0.18);
+}
+.filter-btn.active {
+  background: linear-gradient(90deg, var(--color-primary-light), var(--color-primary-medium));
+  color: var(--color-primary-dark);
+  border: 2px solid var(--color-primary-dark);
+  box-shadow: 0 4px 16px rgba(53, 84, 186, 0.22);
+  transform: scale(1.08);
+}
+.comment-form button[type="submit"] {
+  width: 100%;
+  max-width: 200px;
+  margin-top: 0.5em;
+}
+@media (max-width: 600px) {
+  button, .filter-btn, .subscribe-button, .like-btn {
+    font-size: 1em;
+    min-width: 90px;
+    padding: 0.7em 1em;
+  }
+  .comment-form button[type="submit"] {
+    max-width: 100%;
+  }
+}
