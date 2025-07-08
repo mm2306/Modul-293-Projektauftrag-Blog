@@ -66,14 +66,22 @@
               cultural explorers.
             </p>
           </div>
-          Video: <br>
-          <iframe width="600" height="345" src="https://www.youtube.com/embed/EwMB8Ri0beA?controls=0"></iframe>
           <div class="like-section">
             <button id="like-btn" class="like-btn">Like 👍</button>
             <span id="like-count">0</span> likes
           </div>
+          Video: <br>
+          <iframe width="600" height="345" src="https://www.youtube.com/embed/EwMB8Ri0beA?controls=0"></iframe>
         </article>
-        <br />
+      </section>
+      <section class="comment-section" style="margin-top:2rem;">
+        <h2>Comments</h2>
+        <form id="comment-form" class="comment-form" autocomplete="off" style="margin-bottom:1.5rem;">
+          <input id="comment-name" type="text" placeholder="Your name" required style="margin-bottom:0.5rem;display:block;width:100%;max-width:300px;" />
+          <textarea id="comment-text" placeholder="Your comment" required rows="3" style="margin-bottom:0.5rem;display:block;width:100%;max-width:500px;"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+        <ul id="comment-list" class="comment-list" style="list-style:none;padding:0;"></ul>
       </section>
     </main>
 

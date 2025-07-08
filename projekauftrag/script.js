@@ -43,4 +43,40 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 120);
     });
   }
+
+  // Comment section logic for articles
+  const commentForm = document.getElementById('comment-form');
+  const commentList = document.getElementById('comment-list');
+  const commentName = document.getElementById('comment-name');
+  const commentText = document.getElementById('comment-text');
+
+  if (commentForm && commentList && commentName && commentText) {
+    const commentsKey = 'comments_' + window.location.pathname;
+    // Load and display existing comments
+    function loadComments() {
+      commentList.innerHTML = '';
+      const comments = JSON.parse(localStorage.getItem(commentsKey)) || [];
+      comments.forEach(({ name, text, date }) => {
+        const li = document.createElement('li');
+        li.className = 'comment-item';
+        li.innerHTML = `<strong>${name}</strong> <span class="comment-date">${date}</span><br>${text}`;
+        commentList.appendChild(li);
+      });
+    }
+    loadComments();
+
+    commentForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name = commentName.value.trim();
+      const text = commentText.value.trim();
+      if (!name || !text) return;
+      const date = new Date().toLocaleString();
+      const comments = JSON.parse(localStorage.getItem(commentsKey)) || [];
+      comments.push({ name, text, date });
+      localStorage.setItem(commentsKey, JSON.stringify(comments));
+      commentName.value = '';
+      commentText.value = '';
+      loadComments();
+    });
+  }
 });

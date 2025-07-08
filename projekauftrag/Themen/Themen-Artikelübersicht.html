@@ -29,60 +29,146 @@
         class="section-header"
         style="text-align: center; margin-bottom: 2rem"
       >
-        <h2>Explore our topics</h2>
-        <p>Discover topics about our different Blogs</p>
+        <h2>All Articles</h2>
+        <p>Browse and filter all blog articles by theme.</p>
+        <div id="filter-buttons" style="margin: 1.5rem 0;">
+          <button class="filter-btn" data-theme="all">All</button>
+          <button class="filter-btn" data-theme="reiseziele">Destination Goals</button>
+          <button class="filter-btn" data-theme="inspirierend">Inspiring People</button>
+          <button class="filter-btn" data-theme="serien">Series to Watch</button>
+        </div>
       </header>
 
-      <section class="blog-posts">
-        <article class="post">
-          <img
-            src="img/Salar-de-Uyuni-Image-Bolivia-2456461560.jpg"
-            alt="Vast, reflective salt flats of Salar de Uyuni"
-            class="post-image"
-          />
+      <section class="blog-posts" id="article-list">
+        <!-- Article cards start -->
+        <article class="post" data-theme="reiseziele">
+          <img src="img/Salar-de-Uyuni-Image-Bolivia-2456461560.jpg" alt="Salar de Uyuni" class="post-image" />
           <div class="post-content">
-            <h2><a href="Themen-Reiseziele.html">Destination Goals</a></h2>
-            <p>
-              Different destinations on earth that we want to visit in the
-              future. There are 10 Blog posts and Idea on this page
-            </p>
-            <div class="post-meta"></div>
+            <h2><a href="Artikel/Reiseziele/Salar.html">Salar de Uyuni</a></h2>
+            <p>Vast, reflective salt flats of Bolivia. A surreal natural wonder.</p>
           </div>
         </article>
-
-        <article class="post">
-          <img
-            src="https://wallpapers.com/images/hd/4k-nba-superstar-kobe-bryant-ruzemu0ixzp0or9k.jpg"
-            alt="Inspiring people"
-            class="post-image"
-          />
+        <article class="post" data-theme="reiseziele">
+          <img src="https://windows10spotlight.com/wp-content/uploads/2022/10/4f77f4ad1710eae1bfc1b3de06138b18.jpg" alt="Rainbow Mountains" class="post-image" />
           <div class="post-content">
-            <h2>
-              <a href="Themen-Inspirierend.html">Most Inspiring people</a>
-            </h2>
-            <div class="post-meta"></div>
-            <p>
-              People who have achieved big Goals, expierenced great things and
-              inspired many others. 
-            </p>
+            <h2><a href="Artikel/Reiseziele/Rainbow-Mountains.html">Rainbow Mountains</a></h2>
+            <p>Colorful mineral stripes in the Peruvian Andes. A trekker's dream.</p>
           </div>
         </article>
-
-        <article class="post">
-          <img
-            src="https://www.nme.com/wp-content/uploads/2021/03/breakingbad-2000x1270-1.jpg"
-            alt="Series"
-            class="post-image"
-          />
+        <article class="post" data-theme="reiseziele">
+          <img src="https://www.planetware.com/wpimages/2020/02/world-most-beautiful-lakes-moraine-lake.jpg" alt="Moraine Lake" class="post-image" />
           <div class="post-content">
-            <h2><a href="Themen-Serien.html">Series to watch</a></h2>
-            <div class="post-meta"></div>
-            <p>Good Series to watch if you don't know what to watch next.</p>
+            <h2><a href="Artikel/Reiseziele/Moraine-Lake.html">Moraine Lake</a></h2>
+            <p>Turquoise waters and dramatic peaks in the Canadian Rockies.</p>
           </div>
         </article>
+        <article class="post" data-theme="reiseziele">
+          <img src="https://www.atlasandboots.com/wp-content/uploads/2020/01/Fly-Geyser-Nevada-USA.jpg" alt="Fly Geyser" class="post-image" />
+          <div class="post-content">
+            <h2><a href="Artikel/Reiseziele/Fly-Geyser.html">Fly Geyser</a></h2>
+            <p>A psychedelic geothermal geyser in Nevada, USA.</p>
+          </div>
+        </article>
+        <article class="post" data-theme="reiseziele">
+          <img src="https://www.ireland.com/contentassets/7e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e/giants-causeway.jpg" alt="Giants Causeway" class="post-image" />
+          <div class="post-content">
+            <h2><a href="Artikel/Reiseziele/Giants-Causeway.html">Giants Causeway</a></h2>
+            <p>Hexagonal basalt columns on the coast of Northern Ireland.</p>
+          </div>
+        </article>
+        <article class="post" data-theme="reiseziele">
+          <img src="https://www.vietnam.travel/sites/default/files/styles/top_banner/public/2019-09/Mu%20Cang%20Chai%20Vietnam%20Travel.jpg" alt="Mu Cang Chai" class="post-image" />
+          <div class="post-content">
+            <h2><a href="Artikel/Reiseziele/Mu-Cang-Chai.html">Mu Cang Chai</a></h2>
+            <p>Stunning rice terraces in Vietnam's northern mountains.</p>
+          </div>
+        </article>
+        <article class="post" data-theme="reiseziele">
+          <img src="https://www.earthtrekkers.com/wp-content/uploads/2020/01/Socotra-Island-Yemen.jpg" alt="Socotra Island" class="post-image" />
+          <div class="post-content">
+            <h2><a href="Artikel/Reiseziele/Socotra-Island.html">Socotra Island</a></h2>
+            <p>Alien-like landscapes and unique flora in Yemen.</p>
+          </div>
+        </article>
+        <article class="post" data-theme="reiseziele">
+          <img src="https://www.extremeiceland.is/media/1016/vatnajokull-ice-caves.jpg" alt="Vatnajokull Ice Caves" class="post-image" />
+          <div class="post-content">
+            <h2><a href="Artikel/Reiseziele/vatnajokull-ice-caves.html">Vatnajokull Ice Caves</a></h2>
+            <p>Crystal blue ice caves in Iceland's largest glacier.</p>
+          </div>
+        </article>
+        <!-- Inspiring People -->
+        <article class="post" data-theme="inspirierend">
+          <img src="https://liberalco.org/wp-content/uploads/2023/12/David-Goggins-Net-Worth-2023-Earnings-Career-Bio-Family.jpg" alt="David Goggins" class="post-image" />
+          <div class="post-content">
+            <h2><a href="Artikel/Personen/David-Goggins.html">David Goggins</a></h2>
+            <p>Endurance athlete and author, known for mental toughness and transformation.</p>
+          </div>
+        </article>
+        <article class="post" data-theme="inspirierend">
+          <img src="https://s.abcnews.com/images/Entertainment/GTY_cristiano_ronaldo_8_jtm_150203_23x16_1600.jpg" alt="Cristiano Ronaldo" class="post-image" />
+          <div class="post-content">
+            <h2><a href="Artikel/Personen/Cristiano-Ronaldo.html">Cristiano Ronaldo</a></h2>
+            <p>Football legend and philanthropist, inspiring millions worldwide.</p>
+          </div>
+        </article>
+        <article class="post" data-theme="inspirierend">
+          <img src="https://wallpapers.com/images/hd/4k-nba-superstar-kobe-bryant-ruzemu0ixzp0or9k.jpg" alt="Kobe Bryant" class="post-image" />
+          <div class="post-content">
+            <h2><a href="Artikel/Personen/Kobe-Bryant.html">Kobe Bryant</a></h2>
+            <p>NBA superstar, champion, and relentless competitor.</p>
+          </div>
+        </article>
+        <!-- Series -->
+        <article class="post" data-theme="serien">
+          <img src="https://ia.media-imdb.com/images/M/MV5BMTJiMzgwZTktYzZhZC00YzhhLWEzZDUtMGM2NTE4MzQ4NGFmXkEyXkFqcGdeQWpybA@@._V1_UX477_CR0,0,477,268_AL_.jpg" alt="Breaking Bad" class="post-image" />
+          <div class="post-content">
+            <h2><a href="Artikel/Serien/Breaking-Bad.html">Breaking Bad</a></h2>
+            <p>Crime drama about a chemistry teacher turned drug kingpin.</p>
+          </div>
+        </article>
+        <article class="post" data-theme="serien">
+          <img src="https://www.nme.com/wp-content/uploads/2021/03/breakingbad-2000x1270-1.jpg" alt="Outer Banks" class="post-image" />
+          <div class="post-content">
+            <h2><a href="Artikel/Serien/Outer-Banks.html">Outer Banks</a></h2>
+            <p>Teen adventure series set on the North Carolina coast.</p>
+          </div>
+        </article>
+        <article class="post" data-theme="serien">
+          <img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2023/06/snowfall-season-6.jpg" alt="Snowfall" class="post-image" />
+          <div class="post-content">
+            <h2><a href="Artikel/Serien/Snowfall.html">Snowfall</a></h2>
+            <p>Crime drama set in 1980s Los Angeles during the crack epidemic.</p>
+          </div>
+        </article>
+        <article class="post" data-theme="serien">
+          <img src="https://www.nme.com/wp-content/uploads/2021/03/breakingbad-2000x1270-1.jpg" alt="Squid Game" class="post-image" />
+          <div class="post-content">
+            <h2><a href="Artikel/Serien/Squid-Game.html">Squid Game</a></h2>
+            <p>Survival drama about a deadly competition for a cash prize.</p>
+          </div>
+        </article>
+        <!-- Article cards end -->
       </section>
     </main>
 
     <footer class="impressum">Michel © Impressum</footer>
+    <script>
+      // Filtering logic
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+          const theme = this.getAttribute('data-theme');
+          document.querySelectorAll('.post').forEach(post => {
+            if (theme === 'all' || post.getAttribute('data-theme') === theme) {
+              post.style.display = '';
+            } else {
+              post.style.display = 'none';
+            }
+          });
+          document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+        });
+      });
+    </script>
   </body>
 </html>
