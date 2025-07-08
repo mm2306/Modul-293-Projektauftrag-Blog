@@ -637,3 +637,54 @@ body > footer {
     height: 140px;
   }
 }
+
+/* --- Responsive improvements for article pages --- */
+
+/* Make iframes (e.g., YouTube videos) responsive in articles */
+.single-post iframe {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: var(--border-radius-base);
+  border: 2px solid var(--color-primary-medium);
+}
+
+/* Ensure single-post-container and single-post have padding and adapt on small screens */
+@media (max-width: 600px) {
+  .single-post-container {
+    padding: 0.5rem;
+  }
+  .single-post {
+    padding: 0.5rem;
+  }
+  .single-post h1 {
+    font-size: 1.5em;
+  }
+  .post-meta {
+    font-size: 0.95em;
+  }
+  .post-figure figcaption {
+    font-size: 0.85em;
+  }
+}
+
+/* Improve spacing for like-section on mobile */
+@media (max-width: 600px) {
+  .like-section {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+}
+
+/* Make sure images in articles never overflow */
+.single-post-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
